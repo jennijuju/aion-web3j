@@ -1,5 +1,0 @@
-0.0
-org.aion.jennifer.HelloAvm
-Clinit: ()
-public static String getString()
-public static void setString(String)
