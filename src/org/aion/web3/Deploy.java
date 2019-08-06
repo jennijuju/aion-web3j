@@ -23,7 +23,7 @@ public class Deploy {
 
     public static void main(String [] args) throws Exception {
         // Deploy the contract
-        final Counter counterContract = Counter.deploy(aion, manager, AionGasProvider.INSTANCE).send();
+        final Counter counterContract = Counter.deploy(aion, manager, AionGasProvider.INSTANCE, 1).send();
         System.out.println("Tx Hash:"+ counterContract.getTransactionReceipt());
         System.out.println("Contract Address: " + counterContract.getContractAddress());
     }

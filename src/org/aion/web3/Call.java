@@ -22,7 +22,7 @@ public class Call {
 
 
     public static void main(String [] args) throws Exception {
-        final Counter counterContract = Counter.load("0xa0ddb3bd4e52f5b2ab844e3c5dd63e5f974b3371bb4771abfa7757cb53d68eac", aion, manager, AionGasProvider.INSTANCE);
+        final Counter counterContract = Counter.load("0xa031b3db158704f698d6126e1ee714d0ef39be312850a4bc9db5b7e06c107bd0", aion, manager, AionGasProvider.INSTANCE);
         Integer result = counterContract.call_getCount().send();
         System.out.println("Current count is: " + result);
     }
